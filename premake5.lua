@@ -41,6 +41,7 @@ project "freetype"
 		"freetype/src/cff/cff.c",
 		"freetype/src/cid/type1cid.c",
 		"freetype/src/gzip/ftgzip.c",
+		"freetype/src/hvf/hvf.c",
 		"freetype/src/lzw/ftlzw.c",
 		"freetype/src/pcf/pcf.c",
 		"freetype/src/pfr/pfr.c",
@@ -50,6 +51,7 @@ project "freetype"
 		"freetype/src/raster/raster.c",
 		"freetype/src/sdf/sdf.c",
 		"freetype/src/sfnt/sfnt.c",
+		"freetype/src/svg/svg.c",
 		"freetype/src/smooth/smooth.c",
 		"freetype/src/truetype/truetype.c",
 		"freetype/src/type1/type1.c",
@@ -114,7 +116,8 @@ project "msdfgen"
 
 	defines
 	{
-		"MSDFGEN_USE_CPP11"
+		"MSDFGEN_USE_CPP11",
+		"MSDFGEN_PUBLIC="
 	}
 
 	links
